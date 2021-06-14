@@ -18,7 +18,7 @@ export function getDistRoot() {
 export function getDistPath() {
   return Path.join(
     getDistRoot(),
-    `${getExecutableName()}-${process.platform}-x64`
+    `${getExecutableName()}-${process.platform}-ia32`
   )
 }
 

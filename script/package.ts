@@ -137,8 +137,8 @@ function packageLinux() {
   const args = [
     'build',
     '--prepackaged',
-    distPath,
-    '--x64',
+    distPath,    
+    '--ia32',
     '--config',
     configPath,
   ]
