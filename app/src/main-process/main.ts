@@ -80,11 +80,11 @@ function getExtraErrorContext(): Record<string, string> {
 const protocolLauncherArg = '--protocol-launcher'
 
 const possibleProtocols = new Set(['x-github-client'])
-if (__DEV__) {
+// if (__DEV__) {
   possibleProtocols.add('x-github-desktop-dev-auth')
-} else {
-  possibleProtocols.add('x-github-desktop-auth')
-}
+// } else {
+//   possibleProtocols.add('x-github-desktop-auth')
+// }
 // Also support Desktop Classic's protocols.
 if (__DARWIN__) {
   possibleProtocols.add('github-mac')
